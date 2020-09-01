@@ -11,7 +11,9 @@
     <groupId>com.practice</groupId>
     <artifactId>nir</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>nir</name>
+
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -47,13 +49,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
-            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -67,7 +63,7 @@
                                     <groupId>com.heroku</groupId>
                                     <artifactId>webapp-runner</artifactId>
                                     <version>9.0.30.0</version>
-                                    <destFileName>webapp-runner.war</destFileName>
+                                    <destFileName>webapp-runner.jar</destFileName>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>

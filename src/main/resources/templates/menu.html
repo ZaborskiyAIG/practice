@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+</head>
+</body>
+<h3>Введите формулы для построения таблицы истинности и проверки равносильности</h3><br>
+
+В качестве переменных использовать только латинские буквы<br>
+
+Логические операции:<br>
+<br>
+! - логическое отрицание (НЕ)<br>
+<br>
++ - Дизъюнкция (ИЛИ)<br>
+<br>
+* - Конъюкция (И)<br>
+<br>
+@ - Импликация (ЕСЛИ-ТО)<br>
+<br>
+
+<form method="get" th:action= "@{/solution}" >
+    <p><b>F1:</b>
+       <input type="text" name="F1" size="25">
+    </p>
+    <p><b>F2:</b>
+       <input type="text" name="F2" size="25">
+    </p>
+
+    <p><b style="color: red" th:text="${message}"><br></b>
+
+    <p><input type="submit" value="Подсчитать"></p>
+</form>
+
+</body>
+</html>

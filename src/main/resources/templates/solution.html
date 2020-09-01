@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/table.css" th:href="@{/table.css}" rel="stylesheet" />
+    <title>Решение</title>
+</head>
+<body>
+
+<table>
+    <tr th:each="i: ${table}" >
+        <td th:each="item: ${i}">
+            <span th:text="${item}"></span >
+
+    </tr>
+
+    <p><b  th:text="${message}"><br></b>
+
+</table>
+
+</body>
+</html>
